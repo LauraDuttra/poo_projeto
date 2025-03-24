@@ -1,15 +1,19 @@
 <?php
- abstract class Pessoa{
+ 
+ // Classe base abstrata
+ abstract class Pessoa {
      public $nome;
  
-     public function __construct($nome){
-         $this->nome=$nome;
+     public function __construct($nome) {
+         $this->nome = $nome;
      }
  }
  
- class Aluno extends Pessoa{
- }
- $laura = new Aluno ( "laura" );
- echo $sarah->nome . "É ele";
+ // Classe Aluno herda de Pessoa
+ class Aluno extends Pessoa {}
+ 
+ // Criando objeto
+ $rafael = new Aluno("Rafael");
+ echo $rafael->nome . "\n"; // Rafael
  
  ?>
